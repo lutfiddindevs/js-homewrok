@@ -2,8 +2,23 @@
 <html>
 <head>
 	<title>JS Homework</title>
+	
 </head>
 <body>
+	<h1>Make bulb on/off by clicking the switcher</h1>
+<img id="bulb" src="images/bulb-off.gif" onclick="switchBulb()" style="width: 200px">
+<script type="text/javascript">
+	function switchBulb() {
+        //DOM(Document Object Model)
+		let = document.getElementById = 'bulb';
 
+		if (bulb.src.match('bulb-on')) {
+			bulb.src = 'images/bulb-off';
+		} else {
+            bulb.src = "images/bulb-on.gif";
+	    }
+	}
+		
+	</script>
 </body>
 </html>
