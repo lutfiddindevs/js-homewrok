@@ -6,16 +6,19 @@
 </head>
 <body>
 	<h1>Make bulb on/off by clicking the switcher</h1>
-<img id="bulb" src="images/bulb-off.gif" onclick="switchBulb()" style="width: 200px">
+<img id="bulb" src="images/bulb-off.gif" style="width: 200px">
+<img id="swithcer" src="images/switch.jpg" onclick="switchBulb()"  style="width: 100px">
 <script type="text/javascript">
 	function switchBulb() {
         //DOM(Document Object Model)
 		let = document.getElementById = 'bulb';
-
+        let swithcer = document.getElementById('switcher');
 		if (bulb.src.match('bulb-on')) {
 			bulb.src = 'images/bulb-off';
+			switcher.style["transform"]="scaleY(-1)";
 		} else {
             bulb.src = "images/bulb-on.gif";
+            switcher.style["transform"]="scaleY(1)";
 	    }
 	}
 		
